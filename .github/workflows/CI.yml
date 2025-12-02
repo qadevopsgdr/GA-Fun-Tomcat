@@ -1,3 +1,4 @@
+
 name: Workflow file for java app deployment
 on:  
   workflow_dispatch:
@@ -26,6 +27,19 @@ jobs:
             mvn --version
             mvn clean package
 
+      - name: Upload .war artifact 
+        uses: actions/upload-artifact@v4
+        with:
+          # Name of the artifact to upload.
+          # Optional. Default is 'artifact'
+          name: java-war-file
+
+    # A file, directory or wildcard pattern that describes what to upload
+    # Required.
+          path: target/*.war
+
+
+          
   job-Deploy:
    needs:   job-Build
    runs-on: ubuntu-latest
@@ -43,4 +57,3 @@ jobs:
           tomcat_url: ${{ secrets.TOMCAT_URL}}
           tomcat_user: ${{ secrets.TOMCAT_USER}}
           tomcat_pwd: ${{secrets.TOMCAT_PASSWORD}}
-      
