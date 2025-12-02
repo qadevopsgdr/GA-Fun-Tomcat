@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>KK FUNDA Home Page</title>
+<title>GDR FUN Home Page</title>
 <link href="images/kkfunda.jpg" rel="icon">
 <!-- Bootstrap CDN -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -46,8 +46,8 @@
 <body>
 
 <header>
-    <h1>🚀 Welcome to KK FUNDA YOUTUBE CHANNEL🚀</h1>
-    <h3>Training | Development | Consulting</h3>
+    <h1>🚀 Welcome to GDR FUN YOUTUBE CHANNEL🚀</h1>
+    <h3>Testing  | DEVOPS</h3>
 </header>
 
 <div class="container">
@@ -75,11 +75,11 @@
     <!-- Contact Info -->
     <div class="info-card text-center">
         <img src="images/kkfunda.jpg" alt="KK FUNDA Logo" width="120" class="mb-3 rounded-circle shadow">
-        <h4>KK FUNDA</h4>
-        <p><b>Address:</b> Martha Halli, Bangalore</p>
+        <h4>GDR FUNDAMENTAL</h4>
+        <p><b>Address:</b> Madhapur, Hyderabad</p>
         <p><b>Phone:</b> +91-9676831734</p>
-        <p><b>Email:</b> <a href="mailto:kkeducationblr@gmail.com">kkeducationblr@gmail.com</a></p>
-        <a href="mailto:kkeducation@gmail.com" class="btn btn-primary mt-2">📧 Mail to KK FUNDA</a>
+        <p><b>Email:</b> <a href="mailto:qadurga@gmail.com">qdevops@gmail.com</a></p>
+        <a href="mailto:qdevops@gmail.com" class="btn btn-primary mt-2">📧 Mail to GDR FUNDA</a>
     </div>
 
     <!-- Service Links -->
@@ -91,8 +91,8 @@
 </div>
 
 <footer>
-    <p>© 2024 KK FUNDA Training & Development Center</p>
-    <p><small>Powered by <a href="https://google.com/">KK FUNDA</a></small></p>
+    <p>© GDR FUN  Training Center</p>
+    <p><small>Powered by <a href="https://google.com/">DR FUND</a></small></p>
 </footer>
 
 <!-- Bootstrap JS -->
