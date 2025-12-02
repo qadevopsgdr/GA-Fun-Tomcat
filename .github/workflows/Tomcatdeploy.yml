@@ -1,4 +1,4 @@
-name: Workflow file for java app deployment
+name: Workflow file for java app deployment..
 
 on:
   workflow_dispatch:
