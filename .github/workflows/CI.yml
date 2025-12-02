@@ -1,0 +1,28 @@
+name: Workflow file for java app deployment
+on:  
+  workflow_dispatch:
+
+jobs:
+  job-checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+  job-Build:
+   runs-on: ubuntu-latest
+   steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+  
+      - name: Java setup
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '21'
+
+      - name: Install Maven
+        run: |
+            sudo apt install maven -y
+            mvn --version
+            mvn clean package
+            
