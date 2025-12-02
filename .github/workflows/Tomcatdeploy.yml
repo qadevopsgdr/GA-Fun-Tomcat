@@ -60,5 +60,5 @@ jobs:
 
           curl -u "${{ secrets.TOMCAT_USER }}:${{ secrets.TOMCAT_PASSWORD }}" \
             -T "$WAR_FILE" \
-            "${{ secrets.TOMCAT_URL }}/manager/text/deploy?path=/Drapp&update=true"
+            "${{ secrets.TOMCAT_URL }}/manager/text/deploy?path=/drapp&update=true"
 
