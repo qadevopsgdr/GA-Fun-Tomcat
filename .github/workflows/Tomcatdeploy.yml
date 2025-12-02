@@ -1,0 +1,64 @@
+name: Workflow file for java app deployment
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  job-checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+
+  job-build:
+    runs-on: ubuntu-latest
+    needs: job-checkout
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Java setup
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Install Maven & Build
+        run: |
+          sudo apt update
+          sudo apt install -y maven
+          mvn clean package -DskipTests
+
+      - name: Upload .war artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: java-war-file
+          path: target/*.war
+
+
+  job-deploy:
+    runs-on: ubuntu-latest
+    needs: job-build
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Download artifact
+        uses: actions/download-artifact@v5
+        with:
+          name: java-war-file
+          path: ./deploy
+
+      - name: Deploy to Tomcat (via Manager API)
+        run: |
+          WAR_FILE=$(ls ./deploy/*.war)
+
+          echo "Uploading WAR file: $WAR_FILE"
+
+          curl -u "${{ secrets.TOMCAT_USER }}:${{ secrets.TOMCAT_PASSWORD }}" \
+            -T "$WAR_FILE" \
+            "${{ secrets.TOMCAT_URL }}/manager/text/deploy?path=/myapp&update=true"
+
