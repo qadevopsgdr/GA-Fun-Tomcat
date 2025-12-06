@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>GDR FUN Home Page - DEVOPS PRACTICE  </title>
+<title>GDR FUN </title>
 <link href="images/kkfunda.jpg" rel="icon">
 <!-- Bootstrap CDN -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +46,7 @@
 <body>
 
 <header>
-    <h1>🚀 Welcome to GDR FUN YOUTUBE CHANNEL🚀</h1>
+    <h1>🚀 Welcome to GDR FUN YOUTUBE CHANNEL🚀 - Code updated in Github</h1>
     <h3>Testing  | DEVOPS</h3>
 </header>
 
