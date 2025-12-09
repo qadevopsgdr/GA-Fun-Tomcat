@@ -46,7 +46,7 @@
 <body>
 
 <header>
-    <h1>🚀 Welcome to GDR FUN YOUTUBE CHANNEL🚀 - Code updated in Github</h1>
+    <h1>🚀 Welcome to GDR FUN YOUTUBE CHANNEL🚀 - Tuesday - WFH </h1>
 
 <h1> MVGR ANITS TECHVEDIKA</h1>
 
