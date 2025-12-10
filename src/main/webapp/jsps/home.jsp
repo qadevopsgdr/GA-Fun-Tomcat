@@ -46,7 +46,7 @@
 <body>
 
 <header>
-    <h1>🚀 Welcome to GDR FUN YOUTUBE CHANNEL🚀 - Webhook added and added slashh... </h1>
+    <h1>🚀 Welcome to GDR FUN - Webhook added and added slashh... 🚀  </h1>
 
 <h1> TECHVEDIKA </h1>
 
